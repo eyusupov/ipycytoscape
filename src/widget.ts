@@ -18,7 +18,7 @@ import { MODULE_NAME, MODULE_VERSION } from './version';
 
 // Import the CSS
 import '../css/widget.css';
-
+import expandCollapse from 'cytoscape-expand-collapse';
 import cytoscape, { Core } from 'cytoscape';
 // @ts-ignore
 import cola from 'cytoscape-cola';
@@ -37,6 +37,7 @@ import 'tippy.js/themes/material.css';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { NodeModel, EdgeModel } from './graph';
 
+expandCollapse(cytoscape);
 cytoscape.use(popper);
 cytoscape.use(dagre);
 cytoscape.use(klay);

@@ -15,6 +15,7 @@
     "strict": true,
     "target": "es2015",
     "strictPropertyInitialization": false,
+    "typeRoots": [ "./types", "./node_modules/@types"],
   },
   "include": [
     "src/**/*.ts"
